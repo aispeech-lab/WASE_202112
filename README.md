@@ -129,7 +129,7 @@ in Cocktail Party Environments},
 
 ## License
 
-Apache License 2.0. For commercial use of this code and models, please contact: Yunzhe Hao(haoyunzhe2017@ia.ac.cn)
+For commercial use of this code and models, please contact: Yunzhe Hao(haoyunzhe2017@ia.ac.cn)
 
 This repository contains codes adapted/copied from the followings:
 - [./models/tasnet.py](./models/tasnet.py) from [Conv-TasNet](https://github.com/naplab/Conv-TasNet) (CC BY-NC-SA 3.0)
