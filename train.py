@@ -335,7 +335,7 @@ def train(epoch):
             total_correct = 0
 
         if updates % config.save_interval == 0:
-            save_model(log_path + 'TDAAv3_{}.pt'.format(updates))
+            save_model(log_path + 'WASE_{}.pt'.format(updates))
 
 
 def save_model(path):
