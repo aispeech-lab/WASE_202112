@@ -8,7 +8,7 @@ Implementation of our paper [Wase: Learning When to Attend for Speaker Extractio
 
 ## Model
 
-WASE is adapted based on our previous proposed [framework](https://ieeexplore.ieee.org/document/), which includes five modules: voiceprint encoder, onset/offset detector, speech encoder, speech decoder, and speaker extraction module.
+WASE is adapted based on our previous proposed [framework](http://www.interspeech2020.org/uploadfile/pdf/Mon-3-11-6.pdf), which includes five modules: voiceprint encoder, onset/offset detector, speech encoder, speech decoder, and speaker extraction module.
 
 In this work, we focus on the onset/offset cues of speech and verify their effectiveness in speaker extraction task. We also combine the onset/offset cues and voiceprint cue. Onset/offset
 cues model start/end time of speech and voiceprint cue models the
