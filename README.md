@@ -83,11 +83,14 @@ tensorboard --logdir ./log
 ### Audio Sample
 
 <!-- - Listen to audio sample at webpage: http://swpark.me/voicefilter/ -->
-- Listen to audio samples at *./assets/demo*.
+- Listen to audio samples at [*./assets/demo*](./assets/demo).
 - Spectrogram samples (clean/mixture/prediction).
-![](./assets/demo/fm_mf/0_None1_clean.png)
-![](./assets/demo/fm_mf/0_None1_noisy.png)
-![](./assets/demo/fm_mf/0_None1_pre.png)
+<div  align="center">    
+<img src="./assets/demo/fm_mf/0_None1_clean.png" width = 400 height = 250 />
+<img src="./assets/demo/fm_mf/0_None1_noisy.png" width = 400 height = 250 />
+<img src="./assets/demo/fm_mf/0_None1_pre.png" width = 400 height = 250 />
+</div>
+
 ### Metric
 
 | Methods             | #Params | SDRi(dB) |
@@ -98,7 +101,7 @@ tensorboard --logdir ./log
 | [SpEx+](https://arxiv.org/abs/2005.04686)      | 13.3M  | 17.2 |
 | WASE (onset / offset + voiceprint)      | 7.5M   | 17.05 |
 
-### If you want to repeat the results above, you need to decay learning rate and freeze voiceprint encoder in config.yaml when the model is close to convergence.
+### If you want to reproduce the results above, you need to decay learning rate and freeze voiceprint encoder in config.yaml when the model is close to convergence.
 
 ```yaml
 FREEZE_VOICEPRINT: 0
@@ -129,8 +132,8 @@ in Cocktail Party Environments},
 
 ## License
 
-For commercial use of this code and models, please contact: Yunzhe Hao(haoyunzhe2017@ia.ac.cn)
+For commercial use of this code and models, please contact: Yunzhe Hao(haoyunzhe2017@ia.ac.cn).
 
 This repository contains codes adapted/copied from the followings:
-- [./models/tasnet.py](./models/tasnet.py) from [Conv-TasNet](https://github.com/naplab/Conv-TasNet) (CC BY-NC-SA 3.0)
-- [./models/tcn.py](./models/tcn.py) from [Conv-TasNet](https://github.com/naplab/Conv-TasNet) (CC BY-NC-SA 3.0)
+- [./models/tasnet.py](./models/tasnet.py) from [Conv-TasNet](https://github.com/naplab/Conv-TasNet) (CC BY-NC-SA 3.0);
+- [./models/tcn.py](./models/tcn.py) from [Conv-TasNet](https://github.com/naplab/Conv-TasNet) (CC BY-NC-SA 3.0).
