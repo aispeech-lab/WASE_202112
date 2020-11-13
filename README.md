@@ -86,9 +86,9 @@ tensorboard --logdir ./log
 - Listen to audio samples at [*./assets/demo*](./assets/demo).
 - Spectrogram samples (clean/mixture/prediction).
 <div  align="center">    
-<img src="./assets/demo/fm_mf/0_None1_clean.png" width = 400 height = 250 />
-<img src="./assets/demo/fm_mf/0_None1_noisy.png" width = 400 height = 250 />
-<img src="./assets/demo/fm_mf/0_None1_pre.png" width = 400 height = 250 />
+<img src="./assets/demo/fm_mf/0_None1_clean.png" width = 500 height = 300 />
+<img src="./assets/demo/fm_mf/0_None1_noisy.png" width = 500 height = 300 />
+<img src="./assets/demo/fm_mf/0_None1_pre.png" width = 500 height = 300 />
 </div>
 
 ### Metric
