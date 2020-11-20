@@ -166,9 +166,6 @@ def train(epoch):
         updates_start_time = time.time()
         train_data = next(train_data_gen)
         if train_data is False:
-            logging('SDR_aver_epoch: %f' % SDR_SUM.mean())
-            logging('SDRi_aver_epoch: %f' % SDRi_SUM.mean())
-            logging('SISNRi_aver_epoch: %f' % SISNRi_SUM.mean())
             logging('training epoch %d ends' % epoch)
             logging('-' * 30)
             break
@@ -274,8 +271,8 @@ def train(epoch):
 
         if updates % config.voiceP_eval_interval == 0:
             logging(
-                "time: %6.3f, epoch: %3d, updates: %8d, train loss: %6.3f, voiceP loss: %6.6f, ss loss: %6.6f, label acc: %6.6f\n"
-                % (time.time() - voiceP_start_time, epoch, updates, loss / num_sample, total_voiceP_loss / config.voiceP_eval_interval,
+                "time: %6.3f, epoch: %3d, updates: %8d, voiceP loss: %6.6f, ss loss: %6.6f, label acc: %6.6f\n"
+                % (time.time() - voiceP_start_time, epoch, updates, total_voiceP_loss / config.voiceP_eval_interval,
                    total_ss_loss / config.voiceP_eval_interval, total_correct / total_sample_num))
             # writer.add_scalars('scalar/acc', {'label_acc': total_correct / total_sample_num}, updates)
             total_voiceP_loss, total_ss_loss = 0, 0
