@@ -92,18 +92,6 @@ if len(opt.gpus) > 1:
 optim = utils.optims.Optim(
     config.optim, config.learning_rate, config.max_grad_norm)
 optim.set_parameters(model.parameters())
-# if config.SCHEDULE:
-#     scheduler = L.StepLR(optim.optimizer, step_size=1e8, gamma=0.2)
-# scheduler = L.ReduceLROnPlateau(optim.optimizer, mode='min', factor=0.5, patience=3,
-#  verbose=False, threshold=0.0001, threshold_mode='rel', cooldown=0, min_lr=0, eps=1e-08)
-# stepLR
-# scheduler = L.StepLR(optim.optimizer, step_size=2, gamma=0.98)
-# warmup ref: pytorch-gradual-warmup-lr
-# scheduler_steplr = L.StepLR(optim.optimizer, step_size=2, gamma=0.98)
-# scheduler_warmup = GradualWarmupScheduler(optim.optimizer, multiplier=1, total_epoch=10, after_scheduler=scheduler_steplr)
-# this zero gradient update is needed to avoid a warning message, issue #8.
-# optim.optimizer.zero_grad()
-# optim.optimizer.step()
 
 # logging module
 if not os.path.exists(config.log):
@@ -150,13 +138,6 @@ def train(epoch):
     SDRi_SUM = np.array([])
     SISNRi_SUM = np.array([])
 
-    # if config.SCHEDULE and scheduler.get_lr()[0] > 5e-5:
-    #     scheduler.step()
-    #     logging("Decaying learning rate to %g" % scheduler.get_lr()[0])
-    # stepLR
-    # scheduler.step()
-    # warmup
-    # scheduler_warmup.step(epoch)
     logging("Epoch %g begin..." % epoch)
     logging("Decaying learning rate to %g" %
             optim.optimizer.param_groups[0]['lr'])
@@ -322,9 +303,6 @@ def train(epoch):
                 scores[metric].append(score[metric])
                 if metric == 'SDR' and score[metric] >= max(scores[metric]):
                     save_model(log_path + 'best_' + metric + '_checkpoint.pt')
-            # ReduceLROnPlateau
-            # scheduler.step(loss_val)
-            # logging("Decaying learning rate to %g" % scheduler.get_lr()[0])
             model.train()
             total_loss = 0
             eval_start_time = time.time()
