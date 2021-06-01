@@ -87,7 +87,9 @@ tensorboard --logdir ./log
 - Spectrogram samples (clean/mixture/prediction).
 <div  align="center">    
 <img src="./assets/demo/fm_mf/0_None1_clean.png" width = 400 height = 150 />
+<br>
 <img src="./assets/demo/fm_mf/0_None1_noisy.png" width = 400 height = 150 />
+<br>
 <img src="./assets/demo/fm_mf/0_None1_pre.png" width = 400 height = 150 />
 </div>
 
