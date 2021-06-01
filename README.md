@@ -86,9 +86,9 @@ tensorboard --logdir ./log
 - Listen to audio samples at [*./assets/demo*](./assets/demo).
 - Spectrogram samples (clean/mixture/prediction).
 <div  align="center">    
-<img src="./assets/demo/fm_mf/0_None1_clean.png" width = 500 height = 300 />
-<img src="./assets/demo/fm_mf/0_None1_noisy.png" width = 500 height = 300 />
-<img src="./assets/demo/fm_mf/0_None1_pre.png" width = 500 height = 300 />
+<img src="./assets/demo/fm_mf/0_None1_clean.png" width = 400 height = 150 />
+<img src="./assets/demo/fm_mf/0_None1_noisy.png" width = 400 height = 150 />
+<img src="./assets/demo/fm_mf/0_None1_pre.png" width = 400 height = 150 />
 </div>
 
 ### Metric
@@ -113,22 +113,26 @@ learning_rate:  0.001
 If you find this repo helpful, please consider citing:
 
 ```
-@article{hao2020wase,
-  title={Wase: Learning When to Attend for Speaker Extraction
-in Cocktail Party Environments},
-  author={Hao, Yunzhe and Xu, Jiaming and Zhang, Peng and Xu, Bo}
+@inproceedings{hao2021wase,
+  title={Wase: Learning When to Attend for Speaker Extraction in Cocktail Party Environments},
+  author={Hao, Yunzhe and Xu, Jiaming and Zhang, Peng and Xu, Bo},
+  booktitle={ICASSP 2021-2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={6104--6108},
+  year={2021},
+  organization={IEEE}
 }
 ```
 
 ```
-@article{hao2020unified,
+@inproceedings{hao2020unified,
   title={A Unified Framework for Low-Latency Speaker Extraction in Cocktail Party Environments},
   author={Hao, Yunzhe and Xu, Jiaming and Shi, Jing and Zhang, Peng and Qin, Lei and Xu, Bo},
-  journal={Proc. Interspeech 2020},
+  booktitle={Proc. Interspeech 2020},
   pages={1431--1435},
   year={2020}
 }
 ```
+For more detailed descirption, you can further explore the whole paper with [this link](https://doi.org/10.1109/ICASSP39728.2021.9413411).  
 
 ## License
 
