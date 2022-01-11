@@ -2,7 +2,7 @@
 
 ## Overview
 
-Implementation of our paper [Wase: Learning When to Attend for Speaker Extraction in Cocktail Party Environments](https://arxiv.org/abs/). WASE first explicitly models **start/end time of speech** (**onset/offset cues**) in speaker extraction problem.
+Implementation of our paper [Wase: Learning When to Attend for Speaker Extraction in Cocktail Party Environments](https://ieeexplore.ieee.org/document/9413411). WASE first explicitly models **start/end time of speech** (**onset/offset cues**) in speaker extraction problem.
 
 ![](./assets/framework.png)
 
